@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+
+body,.contents{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* PÁGINA DE ENTRADA MOBILE */
+@media screen and (max-width:619px){
+    .background{
+        display: none;
+    }
+    .backgrvertical{
+        min-width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 0;
+    }
+    .opac{
+        width: 100vw;
+        height: 50vh;
+        background-color:white;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .bodyback{
+        position: absolute;
+    }
+    .logo{
+        width: 100vw;
+        z-index: 4;
+        display: flex;
+        position: absolute;
+    }
+    .bancorep{
+        height: 11vh;
+        margin: auto;
+        margin-top: 6vh;
+    }
+    .contents{
+        z-index: 3;
+        box-shadow: 0px 0px 10px 0px #454545;
+    }
+    .datos{
+        min-height: 30vh;
+        max-height: fit-content;
+        width: 85vw;
+        z-index: 4;
+        margin-bottom: 5vh;
+    }
+    h1, h2, h3{
+        font-weight: 800;
+        color: #3D5F1B;
+    }
+    h1{
+        margin-top: 2vh;
+    }
+    .login{
+        background-color: #3D5F1B;
+        color: white;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+}
+
+/* PÁGINA DE ENTRADA DESKTOP */
+@media screen and (min-width:620px){
+    .bodyback{
+        position: absolute;
+    }
+    .background{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+    }
+    .backgrvertical{
+        display: none;
+    }
+    .bancorep{
+        max-height: 14vh;
+        max-width: 20vw;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 20px;
+        z-index: 2;
+    }
+    .contents{
+        z-index: 3;
+    }
+    .opac{
+        width: 50vw;
+        height: 100vh;
+        background-color:white;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .datos{
+        height: 65vh;
+        z-index: 4;
+        box-shadow: 10px 10px 30px -15px #454545;
+    }
+    h1, h2, h3{
+        font-weight: 800;
+        color: #3D5F1B;
+    }
+    .login{
+        background-color: #3D5F1B;
+        color: white;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+}
+
+/* PÁGINA DE CUENTA MOBILE */
+@media screen and (max-width:799px){
+    .treeLateral{
+        display: none;
+    }
+    .treenavmobile{
+        min-width: 100vw;
+        height: 16vh;
+        min-height: 140px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        overflow: hidden;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+    .UserPic{
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+    #cerrarSesion{
+        width: 140px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+        #buttonSaldo{
+        position: absolute;
+        margin-top: 90px;
+        width: 180px;
+    }
+        #saldoDisplay{
+        position: absolute;
+        margin-right: 190px;
+        margin-top: 80px;
+        color:white;
+        font-weight: 600;
+        font-size: xx-large;
+    }
+        #usuarioDisplay2{
+        position: absolute;
+        z-index: 3;
+        margin-right: 200px;
+        margin-top: 140px;
+        font-size: medium;
+        color: white;
+        font-weight: 400;
+    }
+        .transacc{
+        width: 180px;
+        margin-top: 20px;
+    }
+    
+/*     .card2{
+        position: absolute;
+    } */
+
+}
+
+/* PÁGINA DE CUENTA DESKTOP */
+@media screen and (min-width:800px){
+    .treeLateral{
+        height: 100vh;
+        max-width: 36vw;
+        object-fit: cover;
+    }
+    .treenavmobile{
+        display:none;
+    }
+    #cerrarSesion{
+        width: 140px;
+        position: absolute;
+        right: 40px;
+        top: 60px;
+    }
+    .UserPic{
+        margin-bottom: 30px;
+    }
+    #buttonSaldo{
+        position: absolute;
+        margin-top: 90px;
+        width: 180px;
+    }
+    #saldoDisplay{
+        position: absolute;
+        margin-right: 190px;
+        margin-top: 80px;
+        color:white;
+        font-weight: 600;
+        font-size: xx-large;
+    }
+    #usuarioDisplay2{
+        position: absolute;
+        z-index: 3;
+        margin-right: 200px;
+        margin-top: 140px;
+        font-size: medium;
+        color: white;
+        font-weight: 400;
+    }
+    .transacc{
+        width: 180px;
+        margin-top: 20px;
+    }
+    .buttons{
+        margin-bottom: 50px;
+    }
+}
